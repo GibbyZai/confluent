@@ -99,7 +99,7 @@ In this lab you will:
 2. Go to the **Messages** (or **Data**) tab.
 3. Click **Produce a new message**.
 4. Provide:
-    - **Key**: `key-1`
+    - **Key**: `123`
     - **Value**:
         ```json
         {"type": "workshop", "message": "hello from the Confluent Cloud UI"}
