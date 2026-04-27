@@ -17,9 +17,9 @@
 End-to-end lab for getting started with Confluent Cloud using a simple e-commerce use case (`orders`, `payments`, `customers`). Suitable as a GitHub `README.md` or workshop guide.
 
 ---
-## `Table of Contents`
+## **Table of Contents**
 
-1. `Prerequisites`
+1. [Prerequisites] (#step-1)
 2. `Lab Overview`
 3. `Step 1 – Create a Confluent Cloud Account`
 4. `Step 2 – Create Initial Environment and Cluster`
@@ -34,7 +34,7 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 13. `Step 11 – (Optional) Use the Confluent CLI`
 
 ---
-## Prerequisites
+## <a name="step-1"></a>Prerequisites
 
 - Modern web browser
 - Terminal (bash, zsh, or PowerShell)
