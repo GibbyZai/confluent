@@ -6,23 +6,22 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 
 
 ## **Table of Contents**
-1. [Prerequisites]
+1. Prerequisites
 2. Lab Overview
-3. Step 1 – Create a Confluent Cloud Account
-4. Step 2 – Create Initial Environment and Cluster
-5. Step 3 – Create a Topic and Use the UI to Produce/Consume
-6. Step 4 – Set Up Dev and Prod Environments and Clusters
-7. Step 5 – Design and Create the Topic Set
-8. Step 6 – Validate Partitions and Replication
-9. Step 7 – Generate API Keys
-10. Step 8 – Run a JSON Producer (Orders)
-11. Step 9 – Run Consumers and Observe Consumer Group Behavior
-12. Step 10 – Introduce a Schema Change
-13. Step 11 – (Optional) Use the Confluent CLI
+3. Create a Confluent Cloud Account
+4. Create Initial Environment and Cluster
+5. Create a Topic and Use the UI to Produce/Consume
+6. Set Up Dev and Prod Environments and Clusters
+7. Design and Create the Topic Set
+8. Validate Partitions and Replication
+9. Generate API Keys
+10. Run a JSON Producer (Orders)
+11. Run Consumers and Observe Consumer Group Behavior
+12. Introduce a Schema Change
+13. (Optional) Use the Confluent CLI
 
 
 ## Prerequisites
-
 - Modern web browser
 - Terminal (bash, zsh, or PowerShell)
 - Python 3.8+ installed
@@ -31,7 +30,6 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 
 
 ## Lab Overview
-
 In this lab you will:
 
 - Create a **free Confluent Cloud account** (or use a shared workshop org).
@@ -47,7 +45,6 @@ In this lab you will:
 
 
 ## Step 1 – Create a Confluent Cloud Account
-
 1. Navigate to:
 `https://confluent.cloud`
 2. Click **Sign up**.
