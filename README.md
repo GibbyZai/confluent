@@ -4,7 +4,7 @@
 
 End-to-end lab for getting started with Confluent Cloud using a simple e-commerce use case (`orders`, `payments`, `customers`). Suitable as a GitHub `README.md` or workshop guide.
 
----
+
 ## **Table of Contents**
 
 1. [Prerequisites] (#step-1)
@@ -21,7 +21,7 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 12. `Step 10 – Introduce a Schema Change`
 13. `Step 11 – (Optional) Use the Confluent CLI`
 
----
+
 ## <a name="step-1"></a>Prerequisites
 
 - Modern web browser
@@ -30,7 +30,7 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 - Ability to install Python packages
 - (Optional) Confluent CLI installed and configured
 
----
+
 ## Lab Overview
 
 In this lab you will:
@@ -46,7 +46,7 @@ In this lab you will:
 - Run **Python consumers** in the same group and observe **consumer group rebalancing**.
 - Introduce a **schema change** (new field) and see how the consumer handles it.
 
----
+
 ## Step 1 – Create a Confluent Cloud Account
 
 1. Navigate to:
