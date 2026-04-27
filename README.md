@@ -8,9 +8,9 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 ## **Table of Contents**
 1. [Prerequisites](#prerequisites)
 2. [Lab Overview](#lab-overview)
-3. [Create a Confluent Cloud Account](#create-a-confluent-cloud-account)
-4. [Create Initial Environment and Cluster](#create-initial-environment-and-cluster)
-5. Create a Topic and Use the UI to Produce/Consume
+3. [Create a Confluent Cloud Account](#1-create-a-confluent-cloud-account)
+4. [Create Initial Environment and Cluster](#2-create-initial-environment-and-cluster)
+5. [Create a Topic and Use the UI to Produce/Consume](3-create-a-topic-and-use-the-ui-to-produceconsume)
 6. Set Up Dev and Prod Environments and Clusters
 7. Design and Create the Topic Set
 8. Validate Partitions and Replication
@@ -44,7 +44,7 @@ In this lab you will:
 - Introduce a **schema change** (new field) and see how the consumer handles it.
 
 
-## Create a Confluent Cloud Account
+## 1. Create a Confluent Cloud Account
 1. Navigate to:
 `https://confluent.cloud`
 2. Click **Sign up**.
@@ -56,13 +56,16 @@ In this lab you will:
 
 > If you are using a **shared workshop org**, simply log in with the credentials provided by the instructor and skip the signup flow.
 
-## Create Initial Environment and Cluster
+## 2. Create Initial Environment and Cluster
+
 ### 2.1 Create an environment
 
 1. In the top navigation bar, click the current environment name (for example: `default`).
 2. Click **+ Add environment**.
 3. Enter a name, for example: `workshop`.
 4. Click **Create**.
+
+
 ### 2.2 Create a basic Kafka cluster
 
 1. Ensure **Environment** is set to `workshop`.
@@ -74,8 +77,9 @@ In this lab you will:
 6. Click **Launch cluster** (or **Create cluster**).
 7. Wait for the cluster status to become **Running**.
 
----
-## Step 3 – Create a Topic and Use the UI to Produce/Consume
+
+## 3. Create a Topic and Use the UI to Produce/Consume
+
 ### 3.1 Create a topic
 
 1. In Confluent Cloud, verify:
@@ -88,6 +92,7 @@ In this lab you will:
     - **Partitions**: `3`
     - **Replication factor**: keep the default (typically `3` in multi-AZ clusters)
 5. Click **Create with defaults**.
+   
 ### 3.2 Produce messages using the UI
 
 1. Open the **workshop-events** topic.
@@ -100,14 +105,16 @@ In this lab you will:
         {"type": "workshop", "message": "hello from the Confluent Cloud UI"}
         ```
 5. Click **Produce**.
+   
 ### 3.3 Consume messages using the UI
 
 1. In the same **Messages** tab, set the offset selector to **Consume from beginning** (or similar).
 2. Click **Start** (if required).
 3. Confirm that the message you produced appears in the results.
 
----
-## Step 4 – Set Up Dev and Prod Environments and Clusters
+
+## 4. Set Up Dev and Prod Environments and Clusters
+
 ### 4.1 Create the `dev` environment and cluster
 
 1. Click the environment selector and choose **+ Add environment**.
