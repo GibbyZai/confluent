@@ -235,6 +235,7 @@ You will use the following environment variables in the code samples:
 ## 8. Run a JSON Producer (Orders)
 
 This section uses **Python** and the `confluent-kafka` library.
+
 ### 8.1 Install the Python client
 
 ```bash
@@ -246,6 +247,7 @@ pip install confluent-kafka
 ### 8.2 Set environment variables
 
 > Replace the placeholder values with your actual Confluent Cloud values.
+
 **macOS/Linux:**
 
 ```bash
@@ -263,6 +265,7 @@ $env:CLOUD_API_KEY="YOUR_API_KEY"
 $env:CLOUD_API_SECRET="YOUR_API_SECRET"
 $env:TOPIC_ORDERS="orders"
 ```
+
 ### 8.3 Create `producer_orders.py`
 
 ```python
