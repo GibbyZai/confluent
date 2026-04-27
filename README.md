@@ -239,11 +239,27 @@ This section uses **Python** and the `confluent-kafka` library.
 ### 8.1 Install the Python client
 
 ```bash
+# macOS/Linux where `python` already points to Python 3
 python -m venv venv
-source venv/bin/activate      # Windows PowerShell: .\venv\Scripts\Activate.ps1
+source venv/bin/activate
+
+# macOS where Python 3 is `python3`
+python3 -m venv venv
+source venv/bin/activate
+
+# common
+pip install confluent-kafka
+```
+
+On Windows PowerShell:
+```bash
+python -m venv venv
+.\venv\Scripts\Activate.ps1
 
 pip install confluent-kafka
 ```
+
+
 ### 8.2 Set environment variables
 
 > Replace the placeholder values with your actual Confluent Cloud values.
