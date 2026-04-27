@@ -8,8 +8,8 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 ## **Table of Contents**
 1. [Prerequisites](#prerequisites)
 2. [Lab Overview](#lab-overview)
-3. Create a Confluent Cloud Account
-4. Create Initial Environment and Cluster
+3. [Create a Confluent Cloud Account](#create-a-confluent-cloud-account)
+4. [Create Initial Environment and Cluster](#create-initial-environment-and-cluster)
 5. Create a Topic and Use the UI to Produce/Consume
 6. Set Up Dev and Prod Environments and Clusters
 7. Design and Create the Topic Set
@@ -44,7 +44,7 @@ In this lab you will:
 - Introduce a **schema change** (new field) and see how the consumer handles it.
 
 
-## Step 1 – Create a Confluent Cloud Account
+## Create a Confluent Cloud Account
 1. Navigate to:
 `https://confluent.cloud`
 2. Click **Sign up**.
@@ -55,8 +55,8 @@ In this lab you will:
 5. After login, you should land on the **Confluent Cloud Home** or **Environments** page.
 
 > If you are using a **shared workshop org**, simply log in with the credentials provided by the instructor and skip the signup flow.
----
-## Step 2 – Create Initial Environment and Cluster
+
+## Create Initial Environment and Cluster
 ### 2.1 Create an environment
 
 1. In the top navigation bar, click the current environment name (for example: `default`).
