@@ -10,15 +10,15 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 2. [Lab Overview](#lab-overview)
 3. [Create a Confluent Cloud Account](#1-create-a-confluent-cloud-account)
 4. [Create Initial Environment and Cluster](#2-create-initial-environment-and-cluster)
-5. [Create a Topic and Use the UI to Produce/Consume](3-create-a-topic-and-use-the-ui-to-produceconsume)
-6. Set Up Dev and Prod Environments and Clusters
-7. Design and Create the Topic Set
-8. Validate Partitions and Replication
-9. Generate API Keys
-10. Run a JSON Producer (Orders)
-11. Run Consumers and Observe Consumer Group Behavior
-12. Introduce a Schema Change
-13. (Optional) Use the Confluent CLI
+5. [Create a Topic and Use the UI to Produce/Consume](#3-create-a-topic-and-use-the-ui-to-produceconsume)
+6. [Set Up Dev and Prod Environments and Clusters](#4-set-up-dev-and-prod-environments-and-clusters)
+7. [Design and Create the Topic Set](#5-design-and-create-the-topic-set)
+8. [Validate Partitions and Replication](#6-validate-partitions-and-replication)
+9. [Generate API Keys](#7-generate-api-keys)
+10. [Run a JSON Producer (Orders)](#8-run-a-json-producer-orders)
+11. [Run Consumers and Observe Consumer Group Behavior](#9-run-consumers-and-observe-consumer-group-behaviour)
+12. [(Optional) Introduce a Schema Change](#10-optional-introduce-a-schema-change)
+13. [(Optional) Use the Confluent CLI](#11-optional-use-the-confluent-cli)
 
 
 ## Prerequisites
@@ -126,6 +126,7 @@ In this lab you will:
     - Cluster type: **Basic** / **Essentials**
     - Cloud/region: choose any suitable combination
 6. Click **Launch cluster** and wait for **Running** status.
+   
 ### 4.2 Create the `prod` environment and cluster
 
 1. Click the environment selector and choose **+ Add environment**.
@@ -143,19 +144,21 @@ At this point you should have:
 - `prod` → `prod-cluster`
 
 ---
-## Step 5 – Design and Create the Topic Set
+## 5. Design and Create the Topic Set
 
 We will use a minimal e-commerce domain:
 
 - `orders`
 - `payments`
 - `customers`
+
 ### 5.1 Topic design (simple)
 
 For each topic:
 
 - **Partitions**: `3`
 - **Replication factor**: default for the cluster (commonly `3`)
+  
 ### 5.2 Create topics in `dev`
 
 1. Switch to:
@@ -181,7 +184,7 @@ For each topic:
     - `customers`
 
 ---
-## Step 6 – Validate Partitions and Replication
+## 6. Validate Partitions and Replication
 ### 6.1 Validate topics in `dev`
 
 1. In `dev` → `dev-cluster`, open **Topics**.
@@ -198,7 +201,7 @@ For each topic:
 Repeat the same validation steps for `prod` → `prod-cluster`.
 
 ---
-## Step 7 – Generate API Keys
+## 7. Generate API Keys
 
 You will now create API keys for the `dev-cluster` so that local clients can connect.
 ### 7.1 Create an API key and secret
@@ -229,7 +232,7 @@ You will use the following environment variables in the code samples:
 - `TOPIC_ORDERS` (topic name)
 
 ---
-## Step 8 – Run a JSON Producer (Orders)
+## 8. Run a JSON Producer (Orders)
 
 This section uses **Python** and the `confluent-kafka` library.
 ### 8.1 Install the Python client
@@ -316,10 +319,11 @@ python producer_orders.py
 
 You should see delivery reports and offsets printed to the console.
 
----
-## Step 9 – Run Consumers and Observe Consumer Group Behavior
+
+## 9. Run Consumers and Observe Consumer Group Behavior
 
 You will now create a consumer application and run multiple instances to observe consumer group rebalancing.
+
 ### 9.1 Create `consumer_orders.py`
 
 ```python
@@ -391,7 +395,7 @@ python producer_orders.py
 while both consumers are running.
 
 ---
-## Step 10 – Introduce a Schema Change
+## 10. (Optional) Introduce a Schema Change
 
 Next, you will add a new field (`discount_code`) to the orders produced, and observe that the consumer continues to function.
 ### 10.1 Update the producer to include a new field
@@ -494,7 +498,7 @@ You should see:
 This demonstrates a basic **forward-compatible** consumer pattern using optional fields.
 
 ---
-## Step 11 – (Optional) Use the Confluent CLI
+## 11. (Optional) Use the Confluent CLI
 
 If you have the **Confluent CLI** configured for Confluent Cloud, you can also produce and consume via CLI.
 ### 11.1 Log in and select the environment and cluster
