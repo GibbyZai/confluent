@@ -6,8 +6,8 @@ End-to-end lab for getting started with Confluent Cloud using a simple e-commerc
 
 
 ## **Table of Contents**
-1. Prerequisites
-2. Lab Overview
+1. [Prerequisites](#prerequisites)
+2. [Lab Overview](#lab-overview)
 3. Create a Confluent Cloud Account
 4. Create Initial Environment and Cluster
 5. Create a Topic and Use the UI to Produce/Consume
